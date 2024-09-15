@@ -34,4 +34,3 @@ if uploaded_file is not None:
     # Get prediction
     result = get_prediction(image_bytes)
     st.write(result)
-
