@@ -7,8 +7,8 @@ import io
 API_KEY = 'f1941114bac543859fba9ea1749f1979'
 ENDPOINT = 'https://southcentralus.api.cognitive.microsoft.com/'
 PROJECT_ID = '6743fefc-c597-43a0-8d1e-4d85db9024bf'
-ITERATION_ID = 'd8e84880-524a-4f6c-bff7-3a60d08627e8'
-PREDICTION_URL = f'{ENDPOINT}customvision/v3.0/Prediction/{PROJECT_ID}/classify/iterations/{ITERATION_ID}/image'
+# Endpoint without iteration ID might not be valid, so this is for reference
+PREDICTION_URL = f'{ENDPOINT}customvision/v3.0/Prediction/{PROJECT_ID}/classify/image'
 
 def get_prediction(image_bytes):
     headers = {
